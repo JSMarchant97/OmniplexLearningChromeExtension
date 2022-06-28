@@ -1,0 +1,55 @@
+<template id="popUpTemplate">
+    <style>
+        #helperPopup {
+            font-size: 16px;
+            color: #000;
+            position: fixed;
+            background: #f0f0f0;
+            width: 300px;
+            height: 200px;
+            display: flex;
+            top: 10px;
+            left: 10px;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            border: solid 1px black;
+            border-radius: 5px;
+            z-index: 99999999;
+            box-shadow: 0px 0px 20px #888888;
+            justify-content: center;
+        }
+
+        #helperPopup h4 {
+            font-size: 16px;
+            color: #000;
+        }
+
+        #helperPopup button {
+            width: 60%;
+            height: 2.5em;
+            margin-top: 5px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 16px;
+            color: #000;
+        }
+
+        #helper-btn-yes {
+            background: #d5ffbe;
+        }
+
+        #helper-btn-no {
+            background: #ffb2b2;
+        }
+
+        #helperPopup button:hover {
+            filter: brightness(0.7);
+        }
+    </style>
+    <div id="helperPopup">
+        <h4>Do you need any help <span class="username">Placeholder</span></h4>
+        <button id="helper-btn-yes">Yes</button>
+        <button id="helper-btn-no">No</button>
+    </div>
+</template>

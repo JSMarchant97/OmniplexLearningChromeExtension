@@ -1,0 +1,40 @@
+<html>
+    <meta charset="UTF-8">
+    <script src = "p5/p5.js" type="text/javascript"></script>
+    <script src = "p5/addons/p5.dom.js" type="text/javascrip"></script>
+    <script src = "background.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <body>
+        <section class="login-form">
+            <template>
+                <div class="container">
+                    <h4>Log in to Omniplex Extension</h4>
+                    <div>
+                        <label for="username">Username: </label>
+                        <input type="text" name="username" placeholder="Enter your username">
+                    </div>
+                    <div>
+                        <label for="password">Password: </label>
+                        <input type="password" name="password" placeholder="Enter your password">
+                    </div>
+                    <p id="error-msg"></p>
+                    <button id="log-in-btn">Log In</button>
+                </div>
+            </template>
+        </section>
+        <section class="logged-in-form">
+            <template>
+                <div class="container">
+                    <h4>Hi <span id="usernameHolder">placeholder</span></h4>
+                    <button id="log-out-btn">Log Out</button>
+                </div>
+            </template>
+        </section>
+        <section class="social-media">
+            <div id="instagramLink" data-link="https://www.instagram.com/omniplexelearn/"><i class="fa fa-instagram"></i></div>
+            <div id="linkedInLink" data-link="https://www.linkedin.com/company/omniplex-ltd/"><i class="fa fa-linkedin-square"></i></div>
+            <div id="twitterLink" data-link="https://twitter.com/OmniplexeLearn"><i class="fa fa-twitter-square"></i></div>
+        </section>
+    </body>
+</html>
